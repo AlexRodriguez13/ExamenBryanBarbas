@@ -10,7 +10,8 @@ namespace Domain.Entities
     {
         public class Weather
         {
-
+            public int id
+            public int
         }
     }
 }
