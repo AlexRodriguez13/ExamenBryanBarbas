@@ -49,6 +49,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BinaryHistoricalWeatherRepository .cs" />
+    <Compile Include="Repository\RAFContext.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
