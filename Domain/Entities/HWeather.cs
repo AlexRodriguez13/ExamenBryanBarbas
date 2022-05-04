@@ -58,6 +58,21 @@ namespace Domain.Entities
             public Snow snow { get; set; }
         }
 
+        public class root
+        {
+           public double lat { get; set; }
+           public double lon { get; set; }
+           public string timezone { get; set; }
+           public string timezone_offset { get; set; }
+           public Current current { get; set; }
+           public List<Hourly> hourly { get; set; }
+
+
+               
+            
+
+        }
+
 
 
     }
