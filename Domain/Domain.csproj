@@ -54,6 +54,7 @@
     <Compile Include="Entities\HWeather.cs" />
     <Compile Include="Interfaces\IHistoricalWeatherModel .cs" />
     <Compile Include="Interfaces\IHttpHistoricalWeatherClient.cs" />
+    <Compile Include="Interfaces\IModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
