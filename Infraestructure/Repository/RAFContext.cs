@@ -13,8 +13,7 @@ namespace Infraestructure.Repository
     {
         private string fileName;
         private int size;
-        //private const string directoryName = "DATA";
-        //private string DirectoryPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), directoryName);
+       
 
         public RAFContext(string fileName, int size)
         {
@@ -142,7 +141,7 @@ namespace Infraestructure.Repository
 
         }
 
-        public T Get<T>(int id) //2
+        public T Get<T>(int id) 
         {
             try
             {
@@ -161,23 +160,20 @@ namespace Infraestructure.Repository
                     }
 
                     PropertyInfo[] properties = newValue.GetType().GetProperties();
-                    //long posh = 8 + (id - 1) * 4;
-                    //TODO Add Binary search to find the id
+                   
                     List<int> ids = new List<int>();
                     brHeader.BaseStream.Seek(8, SeekOrigin.Begin);
                     while (brHeader.BaseStream.Position < brHeader.BaseStream.Length)
                     {
                         ids.Add(brHeader.ReadInt32());
                     }
-                    //BINARY SEARCH
+                    
                     if (ids.BinarySearch(id) < 0)
                     {
                         return default(T);
                     }
 
-                    //brHeader.BaseStream.Seek(posh, SeekOrigin.Begin);
-                    //int index = brHeader.ReadInt32();
-                    //TODO VALIDATE INDEX
+                    
                     long posd = (id - 1) * size;
                     brData.BaseStream.Seek(posd, SeekOrigin.Begin);
                     foreach (PropertyInfo pinfo in properties)
