@@ -32,6 +32,7 @@ namespace Presentation
             this.label1 = new System.Windows.Forms.Label();
             this.cmbCity = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnHistorial = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,18 +54,28 @@ namespace Presentation
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(540, 91);
+            this.btnBuscar.Location = new System.Drawing.Point(348, 91);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
+            // btnHistorial
+            // 
+            this.btnHistorial.Location = new System.Drawing.Point(460, 91);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.Size = new System.Drawing.Size(75, 23);
+            this.btnHistorial.TabIndex = 3;
+            this.btnHistorial.Text = "Historial";
+            this.btnHistorial.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cmbCity);
             this.Controls.Add(this.label1);
@@ -80,6 +91,7 @@ namespace Presentation
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbCity;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnHistorial;
     }
 }
 
