@@ -9,17 +9,15 @@ namespace Domain.Entities
     
     public class HWeather
     {
-       
+
         public class Weather
         {
-            public int id { get; set; }
+            public int id { get; set; } // no puede ser
             public string main { get; set; }
             public string description { get; set; }
             public string icon { get; set; }
         }
-       
-        
-        
+
         public class Current
         {
             public int dt { get; set; }
@@ -38,7 +36,6 @@ namespace Domain.Entities
             public double wind_gust { get; set; }
             public List<Weather> weather { get; set; }
         }
-        
 
         public class Snow
         {
@@ -68,13 +65,12 @@ namespace Domain.Entities
             public double lat { get; set; }
             public double lon { get; set; }
             public string timezone { get; set; }
-            public string timezone_offset { get; set; }
+            public int timezone_offset { get; set; }
             public Current current { get; set; }
             public List<Hourly> hourly { get; set; }
-
         }
 
+
+
+
     }
-
-
-}
