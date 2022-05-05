@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    
-    public class HWeather
-    {
 
+    public class HistoricalWeather
+    {
         public class Weather
         {
             public int id { get; set; } // no puede ser

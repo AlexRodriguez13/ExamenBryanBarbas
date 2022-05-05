@@ -75,8 +75,5 @@ namespace Infraestructure.Repository
                 throw;
             }
         }
-
-
-
     }
 }

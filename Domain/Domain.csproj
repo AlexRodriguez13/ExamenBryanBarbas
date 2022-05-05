@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\HWeather.cs" />
+    <Compile Include="Entities\HistoricalWeather.cs" />
     <Compile Include="Interfaces\IHistoricalWeatherModel .cs" />
     <Compile Include="Interfaces\IHttpHistoricalWeatherClient.cs" />
     <Compile Include="Interfaces\IModel.cs" />

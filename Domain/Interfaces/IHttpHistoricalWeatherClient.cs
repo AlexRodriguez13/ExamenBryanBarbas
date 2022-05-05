@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Interfaces
 {
-   public interface IHttpHistoricalWeatherClient
+    public interface IHttpHistoricalWeatherClient
     {
         Task<HistoricalWeather> GetWeatherByCityNameAsync(string lat, string lon, string time);
     }
