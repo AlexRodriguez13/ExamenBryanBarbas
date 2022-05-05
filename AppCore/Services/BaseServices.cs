@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppCore.Services
 {
-    public interface BaseServices<T> : IServices<T>
+    public class BaseServices<T> : IServices<T>
     {
         private IModel<T> Model;
         protected BaseServices(IModel<T> model)
@@ -23,6 +23,7 @@ namespace AppCore.Services
         {
             return Model.Delete(id);
         }
+
         public List<T> Read()
         {
             return Model.Read();
